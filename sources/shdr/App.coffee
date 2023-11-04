@@ -63,6 +63,7 @@ class App
     @editor.getSession().setMode("ace/mode/glsl")
     @editor.getSession().setUseWrapMode(on)
     @editor.getSession().setValue(@documents[@conf.mode])
+    @editor.commands.removeCommand('find')
     @editor.focus()
 
   loop: ->

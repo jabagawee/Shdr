@@ -11074,6 +11074,7 @@ RawDeflate.inflate = zip_inflate;
       this.editor.getSession().setMode("ace/mode/glsl");
       this.editor.getSession().setUseWrapMode(true);
       this.editor.getSession().setValue(this.documents[this.conf.mode]);
+      this.editor.commands.removeCommand('find');
       return this.editor.focus();
     };
 
